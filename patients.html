@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patients</title>
+    <link rel="stylesheet" href="doctordashcss.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar (Common across all pages) -->
+        <aside>
+            <div class="toggle">
+                <div class="logo">
+                    <img src="doctor-logo.png" alt="Doctor Logo">
+                    <h2>Dr. Smith</h2>
+                </div>
+                <span id="close-btn" class="close">&times;</span>
+            </div>
+            <div class="sidebar">
+                <a href="doctor.html" ><span>&#127968;</span> Dashboard</a>
+                <a href="appointments.html"><span>&#128197;</span> Appointments</a>
+                <a href="patients.html" class="active"><span>&#128203;</span> Patients</a>
+                <a href="login.html"><span>&#128274;</span> Logout</a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main>
+            <div class="header">
+                <button id="menu-btn"><span>&#9776;</span></button>
+                <h1>Patients</h1>
+            </div>
+            <section class="recent-patients">
+                <h2>Recent Patients</h2>
+                <div class="user-list">
+                    <div class="user">
+                        <img src="patient1.jpg" alt="Patient Photo">
+                        <div class="user-info">
+                            <h3>Emily Clark</h3>
+                            <p>Last Visit: 2 days ago</p>
+                        </div>
+                    </div>
+                    <div class="user">
+                        <img src="patient2.jpg" alt="Patient Photo">
+                        <div class="user-info">
+                            <h3>David Brown</h3>
+                            <p>Last Visit: 5 days ago</p>
+                        </div>
+                    </div>
+                    <div class="user">
+                        <img src="patient3.jpg" alt="Patient Photo">
+                        <div class="user-info">
+                            <h3>Sarah White</h3>
+                            <p>Last Visit: 1 week ago</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Right Section (Common across all pages) -->
+        <section class="right-section">
+            <!-- (Right section content remains the same as in `dashboard.html`) -->
+        </section>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

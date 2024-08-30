@@ -1,0 +1,227 @@
+/* Base Styles */
+:root {
+    --primary-color: #6C9BCF;
+    --danger-color: #FF0060;
+    --warning-color: #F7D060;
+    --success-color: #1B9C85;
+    --light-background: #f6f6f9;
+    --light-card-bg: #ffffff;
+    --light-text-color: #363949;
+    --dark-background: #181a1e;
+    --dark-card-bg: #202528;
+    --dark-text-color: #f6f6f9;
+    --sidebar-width: 220px;
+    --transition-duration: 0.3s;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    --background-color: var(--dark-background);
+    --card-bg-color: var(--dark-card-bg);
+    --text-color: var(--dark-text-color);
+}
+
+body {
+    --background-color: var(--light-background);
+    --card-bg-color: var(--light-card-bg);
+    --text-color: var(--light-text-color);
+
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+aside {
+    width: var(--sidebar-width);
+    background-color: var(--primary-color);
+    color: var(--light-card-bg);
+    transition: transform var(--transition-duration);
+    transform: translateX(0);
+}
+
+aside .toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+aside .logo h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
+aside .sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+}
+
+aside .sidebar a {
+    color: var(--light-card-bg);
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color var(--transition-duration);
+}
+
+aside .sidebar a.active,
+aside .sidebar a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+main {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+main h1 {
+    margin-bottom: 20px;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--card-bg-color);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.user-profile img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.medicine-schedule,
+.health-status,
+.report-expired {
+    background-color: var(--card-bg-color);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.medicine-schedule h2,
+.health-status h2,
+.report-expired h2 {
+    margin-bottom: 15px;
+}
+
+.medicine-list .medicine {
+    margin-bottom: 15px;
+}
+
+.medicine-list .medicine h3 {
+    font-size: 18px;
+    margin: 0;
+    color: var(--text-color);
+}
+
+.medicine-list .medicine p {
+    margin: 5px 0;
+    color: var(--text-color);
+}
+
+.status {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: var(--light-card-bg);
+    font-size: 12px;
+}
+
+.status.success {
+    background-color: var(--success-color);
+}
+
+.status.warning {
+    background-color: var(--warning-color);
+}
+
+.add-medicine {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: var(--light-card-bg);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: opacity var(--transition-duration);
+}
+
+.add-medicine:hover {
+    opacity: 0.8;
+}
+
+.daily-activity,
+.vital-signs {
+    margin-bottom: 15px;
+}
+
+.report-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--danger-color);
+    color: var(--light-card-bg);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: opacity var(--transition-duration);
+}
+
+.report-button:hover {
+    opacity: 0.8;
+}
+
+.right-section {
+    width: 300px;
+    padding: 20px;
+    background-color: var(--card-bg-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.right-section .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.right-section .profile {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.right-section .profile-photo img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.right-section .info p {
+    margin: 0;
+    color: var(--text-color);
+}
+
+.right-section .info small {
+    color: var(--text-color);
+}
+

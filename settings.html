@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="stylesheet" href="doctordash.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar (Common across all pages) -->
+        <aside>
+            <div class="toggle">
+                <div class="logo">
+                    <img src="doctor-logo.png" alt="Doctor Logo">
+                    <h2>Dr. Smith</h2>
+                </div>
+                <span id="close-btn" class="close">&times;</span>
+            </div>
+            <div class="sidebar">
+                <a href="dashboard.html"><span>&#127968;</span> Dashboard</a>
+                <a href="appointments.html"><span>&#128197;</span> Appointments</a>
+                <a href="patients.html"><span>&#128203;</span> Patients</a>
+                <a href="reports.html"><span>&#128200;</span> Reports</a>
+                <a href="settings.html" class="active"><span>&#128467;</span> Settings</a>
+                <a href="logout.html"><span>&#128274;</span> Logout</a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main>
+            <h1>Settings</h1>
+            <section class="recent-orders">
+                <h2>Profile Settings</h2>
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" value="Dr. John Smith"><br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" value="dr.smith@example.com"><br><br>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password"><br><br>
+                    <input type="submit" value="Save Changes">
+                </form>
+            </section>
+        </main>
+
+        <!-- Right Section (Common across all pages) -->
+        <section class="right-section">
+            <!-- (Right section content remains the same as in `dashboard.html`) -->
+        </section>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

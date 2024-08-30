@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <link rel="stylesheet" href="logincss.css">
+    <style>
+        /* Your Provided CSS */
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+        /* All the existing CSS styles here */
+    </style>
+</head>
+<body>
+
+<div class="container" id="container">
+    <div class="form-container sign-in">
+        <!-- Patient Signup Form -->
+        <form action="#" id="patient-form">
+            <h2>Signup</h2>
+            <input type="text" placeholder="Full Name" required />
+            <input type="email" placeholder="Email" required />
+            <input type="password" placeholder="Password" required />
+            <input type="text" placeholder="Age" required />
+            <input type="text" placeholder="Address" required />
+            <label for="dropdown">Choose your profession</label>
+            <br/>
+            <select id="dropdown" name="options">
+            <option value="option1">Doctor</option>
+            <option value="option2">Pharma</option>
+            </select>
+            <br/>
+            <button type="submit">Signup</button>
+        </form>
+    </div>
+
+    <div class="form-container sign-up">
+        <!-- Doctor Signup Form -->
+        <form action="#" id="doctor-form">
+            <h2>Doctor Signup</h2>
+            <input type="text" placeholder="Full Name" required />
+            <input type="email" placeholder="Email" required />
+            <input type="password" placeholder="Password" required />
+            <input type="text" placeholder="Specialization" required />
+            <input type="text" placeholder="License Number" required />
+            <input type="text" placeholder="Hospital Affiliation" required />
+            <button type="submit">Signup</button>
+        </form>
+    </div>
+
+    <div class="form-container" style="left: 100%;">
+        <!-- Server Signup Form -->
+        <form action="#" id="server-form">
+            <h2>Server Signup</h2>
+            <input type="text" placeholder="Server Name" required />
+            <input type="text" placeholder="IP Address" required />
+            <input type="text" placeholder="Location" required />
+            <button type="submit">Signup</button>
+        </form>
+    </div>
+
+    <!-- Toggle Container -->
+    <div class="toggle-container">
+        <div class="toggle">
+            <div class="toggle-panel toggle-left">
+                <h2>Already a Patient?</h2>
+                <p>If you have an account, please login here</p>
+                <button class="hidden" id="signInButton">Patient Login</button>
+            </div>
+            <div class="toggle-panel toggle-right">
+                <h2>Already a Doctor?</h2>
+                <p>If you have an account, please login here</p>
+                <button class="hidden" id="signUpButton">sign in</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // JavaScript to handle form toggling and redirection
+    //document.getElementById('signUpButton').addEventListener('click', function() {
+   //     window.location.href = 'signup.html'; // Redirect to the signup page
+    //});
+
+    document.getElementById('signUpButton').addEventListener('click', function() {
+        window.location.href = 'login.html'; // Redirect to the login page
+    });
+</script>
+</body>
+</html>

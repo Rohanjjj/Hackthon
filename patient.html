@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="patient.css">
+    <title>Patient Health Dashboard</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Sidebar -->
+        <aside>
+            <div class="toggle">
+                <div class="logo">
+                    <h2>Health<span class="primary">Track</span></h2>
+                </div>
+                <i class="fas fa-times close"></i>
+            </div>
+            <div class="sidebar">
+                <a href="#" class="active"><span class="fas fa-user"></span>Profile</a>
+                <a href="#"><span class="fas fa-pills"></span>Medicine Schedule</a>
+                <a href="#"><span class="fas fa-heartbeat"></span>Health Status</a>
+                <a href="#"><span class="fas fa-exclamation-triangle"></span>Report Expired Medicine</a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main>
+            <h1>Patient Health Dashboard</h1>
+
+            <!-- Patient Profile -->
+            <div class="user-profile">
+                <img src="profile.jpg" alt="Profile Picture">
+                <h2>John Doe</h2>
+                <p>Age: 35</p>
+                <p>Blood Group: O+</p>
+            </div>
+
+            <!-- Medicine Schedule -->
+            <section class="medicine-schedule">
+                <h2>Medicine Schedule</h2>
+                <div class="medicine-list">
+                    <div class="medicine">
+                        <h3>Medicine Name: Aspirin</h3>
+                        <p>Dosage: 75mg</p>
+                        <p>Time: 8:00 AM, 8:00 PM</p>
+                        <p>Status: <span class="status success">On Time</span></p>
+                    </div>
+                    <div class="medicine">
+                        <h3>Medicine Name: Metformin</h3>
+                        <p>Dosage: 500mg</p>
+                        <p>Time: 9:00 AM</p>
+                        <p>Status: <span class="status warning">Missed</span></p>
+                    </div>
+                </div>
+                <button class="add-medicine"><i class="fas fa-plus-circle"></i> Add Medicine</button>
+            </section>
+
+            <!-- Health Status -->
+            <section class="health-status">
+                <h2>Health Status</h2>
+                <div class="daily-activity">
+                    <h3>Daily Activity</h3>
+                    <p>Steps: 5000</p>
+                    <p>Calories Burned: 300</p>
+                </div>
+                <div class="vital-signs">
+                    <h3>Vital Signs</h3>
+                    <p>Blood Pressure: 120/80 mmHg</p>
+                    <p>Heart Rate: 72 BPM</p>
+                </div>
+            </section>
+
+            <!-- Report Expired Medicine -->
+            <section class="report-expired">
+                <h2>Report Expired Medicine</h2>
+                <button class="report-button"><i class="fas fa-exclamation-triangle"></i> Report</button>
+            </section>
+        </main>
+
+        <!-- Right Section -->
+        <div class="right-section">
+            <div class="nav">
+                <button><span class="fas fa-bars"></span></button>
+                <div class="profile">
+                    <div class="profile-photo">
+                        <img src="profile.jpg" alt="Profile Picture">
+                    </div>
+                    <div class="info">
+                        <p>John Doe</p>
+                        <small class="text-muted">Last login: 2 hours ago</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
